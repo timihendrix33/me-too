@@ -1,5 +1,24 @@
+
+$lato: 'Lato', sans-serif;
+
+$tabbar-bg: #961b1c;
+$tabbar-height: 80px;
+$tabbar-hamburger-icon-top:.9rem;
+$tabbar-hamburger-icon-width:3rem;
+$off-canvas-link-padding:1rem;
+
+$panel-bg: rgba(255,255,255,.9);
+$panel-border-style: none;
+$panel-border-size: 0;
+
+.panel {
+  margin-top: 1.25rem;
+}
+
+
 @import "settings";
 @import "foundation";
+@import "jquery.fullPage";
 
 // Or selectively include components
 // @import
@@ -38,3 +57,95 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+/* Nav Styles */
+nav.tab-bar, .right-off-canvas-menu {top:80px;}
+nav.tab-bar {z-index: 100;}
+section.left.tab-bar-section {
+  img {width: 130px;}
+}
+
+a.menu-icon {
+  span {
+    height: .2rem;
+    -webkit-box-shadow:     1px 15px 1px 1px $tabbar-menu-icon-color,
+                            1px 25px 1px 1px $tabbar-menu-icon-color,
+                            1px 35px 1px 1px $tabbar-menu-icon-color;
+        box-shadow:         0 15px 0 1px $tabbar-menu-icon-color,
+                            0 25px 0 1px $tabbar-menu-icon-color,
+                            0 35px 0 1px $tabbar-menu-icon-color;
+  }
+  &:hover span {
+    -webkit-box-shadow:     1px 15px 1px 1px #b3b3b3,
+                            1px 25px 1px 1px #b3b3b3,
+                            1px 35px 1px 1px #b3b3b3;
+        box-shadow:         0 15px 0 1px #b3b3b3,
+                            0 25px 0 1px #b3b3b3,
+                            0 35px 0 1px #b3b3b3;    
+  }
+}
+
+.off-canvas-list {
+  li {
+    a {font-family: $lato;}
+  }
+}
+
+/* Section 1 */
+.section.one {
+  background: url(../img/orr.jpg) 0 0 no-repeat;
+  background-size:cover;
+  .row:first-child {margin-top:70px;}
+  .scroll {text-align: center;
+    #well {
+      width: 180px;
+      overflow: hidden; 
+      margin:0 auto;
+      padding: 20px;
+      text-align: left;
+      h3 {
+        background: -webkit-gradient(linear,left top,right top,color-stop(0, #4d4d4d),color-stop(0.4, #4d4d4d),color-stop(0.5, white),color-stop(0.6, #4d4d4d),color-stop(1, #4d4d4d)); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: slidetounlock 4s infinite;
+        padding: 0;
+        width: 300%;
+        background-repeat: no-repeat;
+      } 
+    }
+    img {width: 50px;}
+  }
+}
+
+
+
+
+@-webkit-keyframes slidetounlock {
+  0% {
+    background-position: -260px 0; /*x coordinate = #well width */
+  }
+  100% {
+    background-position: 0 0; /*x coordinate = #well width */
+  }
+}
+
+
+
+
+/* Section 2 */
+.section.two {
+  background: url(../img/work.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+/* Section 3 */
+.section.three {
+  background: url(../img/resume.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+/* Section 4 */
+.section.four {
+  background: url(../img/contact.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
