@@ -153,11 +153,13 @@ section.ux {
   padding-top: 20px;
   dl.tabs {
     dd {
-      a {border-radius: 3px; margin-bottom: 10px; padding-left:20px; padding-right:20px;}
+      a {border-radius: 3px; margin-bottom: 10px; margin-right: 10px; padding-left:20px; padding-right:20px;}
     }
   }
   .tabs-content {background: $tabs-navigation-active-bg-color; 
                  border-radius: 3px; padding: 0 20px;
+    img {border: 1px solid #222; margin:10px auto; display: block;}
+    iframe {margin:10px auto; display: block;}
   }
 }
 
