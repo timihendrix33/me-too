@@ -11,9 +11,7 @@ $panel-bg: rgba(255,255,255,.9);
 $panel-border-style: none;
 $panel-border-size: 0;
 
-.panel {
-  margin-top: 1.25rem;
-}
+
 
 
 @import "settings";
@@ -59,8 +57,9 @@ $panel-border-size: 0;
 //   "foundation/components/visibility";
 
 /* Nav Styles */
-nav.tab-bar, .right-off-canvas-menu {top:80px;}
-nav.tab-bar {z-index: 100;}
+/* nav.tab-bar, .right-off-canvas-menu {top:80px;} */
+nav.tab-bar {z-index: 100; position: fixed; width: 100%; top:0;}
+.right-off-canvas-menu {position: fixed; top:0;}
 section.left.tab-bar-section {
   img {width: 130px;}
 }
@@ -98,10 +97,10 @@ a.menu-icon {
   .row:first-child {margin-top:70px;}
   .scroll {text-align: center;
     #well {
-      width: 180px;
+      width: 190px;
       overflow: hidden; 
       margin:0 auto;
-      padding: 20px;
+      padding: 0 20px;
       text-align: left;
       h3 {
         background: -webkit-gradient(linear,left top,right top,color-stop(0, #4d4d4d),color-stop(0.4, #4d4d4d),color-stop(0.5, white),color-stop(0.6, #4d4d4d),color-stop(1, #4d4d4d)); 
@@ -116,20 +115,14 @@ a.menu-icon {
     img {width: 50px;}
   }
 }
-
-
-
-
 @-webkit-keyframes slidetounlock {
   0% {
-    background-position: -260px 0; /*x coordinate = #well width */
+    background-position: -265px 0;
   }
   100% {
-    background-position: 0 0; /*x coordinate = #well width */
+    background-position: 0 0;
   }
 }
-
-
 
 
 /* Section 2 */
@@ -148,4 +141,13 @@ a.menu-icon {
 .section.four {
   background: url(../img/contact.jpg) 0 0 no-repeat;
   background-size: cover;
+  ul {-webkit-padding-start: 0; margin-left:0; list-style: none;}
+}
+
+@media only screen and (min-width: 40.063em) {
+  .section.one {
+    .scroll {
+      #well {width: 223px;}
+    }
+  }
 }
