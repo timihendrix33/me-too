@@ -11,6 +11,9 @@ $panel-bg: rgba(255,255,255,.9);
 $panel-border-style: none;
 $panel-border-size: 0;
 
+$tabs-navigation-bg-color:#e05657;
+
+
 
 
 
@@ -57,7 +60,6 @@ $panel-border-size: 0;
 //   "foundation/components/visibility";
 
 /* Nav Styles */
-/* nav.tab-bar, .right-off-canvas-menu {top:80px;} */
 nav.tab-bar {z-index: 100; position: fixed; width: 100%; top:0;}
 .right-off-canvas-menu {position: fixed; top:0;}
 section.left.tab-bar-section {
@@ -92,7 +94,7 @@ a.menu-icon {
 
 /* Section 1 */
 .section.one {
-  background: url(../img/orr.jpg) 0 0 no-repeat;
+  background: url(../images/orr.jpg) 0 0 no-repeat;
   background-size:cover;
   .row:first-child {margin-top:70px;}
   .scroll {text-align: center;
@@ -127,22 +129,38 @@ a.menu-icon {
 
 /* Section 2 */
 .section.two {
-  background: url(../img/work.jpg) 0 0 no-repeat;
+  background: url(../images/work.jpg) 0 0 no-repeat;
   background-size: cover;
 }
 
 /* Section 3 */
 .section.three {
-  background: url(../img/resume.jpg) 0 0 no-repeat;
+  background: url(../images/resume.jpg) 0 0 no-repeat;
   background-size: cover;
 }
 
 /* Section 4 */
 .section.four {
-  background: url(../img/contact.jpg) 0 0 no-repeat;
+  background: url(../images/contact.jpg) 0 0 no-repeat;
   background-size: cover;
   ul {-webkit-padding-start: 0; margin-left:0; list-style: none;}
 }
+
+/* Section UX */
+section.ux {
+  background: url(../images/ux-bg.png) 0 0 repeat;
+  margin-top: $tabbar-height;
+  padding-top: 20px;
+  dl.tabs {
+    dd {
+      a {border-radius: 3px; margin-bottom: 10px; padding-left:20px; padding-right:20px;}
+    }
+  }
+  .tabs-content {background: $tabs-navigation-active-bg-color; 
+                 border-radius: 3px; padding: 0 20px;
+  }
+}
+
 
 @media only screen and (min-width: 40.063em) {
   .section.one {
