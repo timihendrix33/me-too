@@ -1,35 +1,11 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Experience Designer | Web Developer | Interactive Producer</title>
-    <link rel="stylesheet" href="stylesheets/app.css" />
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>    
-    <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
+  <?php include("incl/head.php"); ?>
   <body>
   	<div class="off-canvas-wrap">
   	  <div class="inner-wrap">  
-    		<nav class="tab-bar">
-    		  <section class="left tab-bar-section">
-      		  <img src="images/tcs-logo.png" alt="Tim Stevenson" />
-    		  </section>
-    		  <section class="right-small">
-    			  <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
-    		  </section>
-    		</nav>
-    		<aside class="right-off-canvas-menu">
-    	    <ul class="off-canvas-list">
-            <li><a href="#bobby">Hello</a></li>
-            <li><a href="#">Experience Design</a></li>
-            <li><a href="#">Web Develpment</a></li>
-            <li><a href="#">Interactive Production</a></li>
-            <li><a href="#resume">Resumé</a></li>
-            <li><a href="#contact">Contact</a></li>            
-          </ul>
-    	  </aside>
-    	  <section class="ux">
+        <?php include("incl/nav.php"); ?>
+    	  <section class="role">
     	    <div class="row">
     	      <div class="large-12 columns">
       	      <div class="panel">
@@ -83,11 +59,7 @@
   	  </div><!--/inner-wrap-->
   	</div><!--/off-canvas-wrap-->
 
-    <script src="bower_components/jquery/jquery.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/jquery-2.1.0.min.js" type="text/javascript"></script>
-    <script src="js/jquery-ui.js" type="text/javascript"></script>
+    <?php include("incl/scripts.php"); ?>
   </body>
 </html>
     	  
