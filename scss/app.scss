@@ -2,7 +2,7 @@
 $lato: 'Lato', sans-serif;
 
 $tabbar-bg: #961b1c;
-$tabbar-height: 80px;
+$tabbar-height: 5rem; 
 $tabbar-hamburger-icon-top:.9rem;
 $tabbar-hamburger-icon-width:3rem;
 $off-canvas-link-padding:1rem;
@@ -73,7 +73,6 @@ $tabs-navigation-bg-color:#e05657;
     }
   }
 }
-
 
 /* Nav */
 nav.tab-bar {z-index: 100; position: fixed; width: 100%; top:0;}
@@ -165,7 +164,7 @@ a.menu-icon {
 
 /* Section Role */
 section.role {
-  background: url(../images/ux-bg.png) 0 0 repeat;
+  background: url(../images/ux-bg.png) 0 0 repeat; 
   margin-top: $tabbar-height;
   padding-top: 20px;
   dl.tabs {
